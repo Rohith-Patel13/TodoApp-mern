@@ -4,6 +4,6 @@ const TodosControllers = require("../controllers/todos")
 
 router.post("/AddTask",TodosControllers.AddTask)
 
-router.get("/Alltasks",TodosControllers.getAllTasks)
+router.get("/AllTasks",TodosControllers.getAllTasks)
 
 module.exports = router
