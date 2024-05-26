@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
-import xmark from "./images/xmark.svg";
-// import MyTasks from './components/MyTasks'; // Import MyTasks component
+import xmark from "../src/components/images/xmark.svg";
+import MyTasks from '../src/components/MyTasks/index'; 
 
 
 function App() {
@@ -139,7 +139,7 @@ function App() {
         <ul className="todo-items-container">
           {
             tasks.map((eachTask,index)=>(
-                <h1 key={index}>{eachTask.title}</h1>
+                <MyTasks eachTask={eachTask} key={eachTask} />
             ))
           }
         </ul>
